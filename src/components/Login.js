@@ -36,7 +36,7 @@ const handleSignIn = () => {
            const errorMessage = error.message;
            console.log(errorCode,errorMessage);
            setSigninsignupErrorMsg(errorMessage)
-           navigate('/login')
+           navigate('/')
          });
      }else{
        createUserWithEmailAndPassword(auth, email.current.value, password.current.value)
